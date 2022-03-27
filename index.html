@@ -17,7 +17,13 @@
     <main class="container grid-big">
       <nav class="nav-bar">
         <div>
-          <img class="nav-logo" src="img/QUIZY.png" alt="logo" />
+          <a href="#main-page"
+            ><img
+              id="main-page"
+              class="nav-logo"
+              src="img/QUIZY.png"
+              alt="logo"
+          /></a>
 
           <div class="nav-middle-svg">
             <svg
@@ -57,7 +63,7 @@
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"
               />
             </svg>
 
@@ -156,76 +162,703 @@
             </svg>
           </button>
         </div>
-        <h1 class="heading-primary">Popular Options</h1>
+        <h1 class="heading-primary">Popular Quizzes</h1>
 
         <div class="main-cards">
           <div class="main-card-1">
             <img
-              class="main-card-img"
+              class="main-card-img card-img1"
               src="img/celebrity-quiz.png"
               alt="celebrity quiz illustration"
             />
             <span class="main-card-head">Celebrities</span>
             <p class="main-card-txt">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              porro, ipsa eos consequatur doloremque cum, animi corrupti
-              voluptatem consequuntur.
+              corrupti voluptatem consequuntur.
             </p>
-            <input
-              type="range"
-              name="range"
-              id="range"
-              min="0"
-              max="100"
-              value="30"
-            />
+            <progress class="main-card-progress" id="file" max="100" value="70">
+              70%
+            </progress>
+            <div class="main-svg-box">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="main-paid-svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+                />
+              </svg>
+
+              <svg
+                height="1792"
+                viewBox="0 0 1792 1792"
+                width="1792"
+                class="main-svg"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1576 927l-1328 738q-23 13-39.5 3t-16.5-36v-1472q0-26 16.5-36t39.5 3l1328 738q23 13 23 31t-23 31z"
+                />
+              </svg>
+            </div>
           </div>
 
           <div class="main-card-2">
             <img
               class="main-card-img"
               src="img/studying.png"
-              alt="celebrity quiz illustration"
+              alt="Science quiz illustration"
             />
             <span class="main-card-head">Science</span>
             <p class="main-card-txt">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              porro, ipsa eos consequatur doloremque cum, animi corrupti
-              voluptatem consequuntur.
+              corrupti voluptatem consequuntur.
             </p>
+            <div class="main-svg-box margin-top">
+              <span class="main-price">&#36;22.00</span>
+              <button class="menu-button button">Buy</button>
+            </div>
           </div>
 
           <div class="main-card-3">
             <img
               class="main-card-img"
               src="img/Plants.png"
-              alt="celebrity quiz illustration"
+              alt="Plants quiz illustration"
             />
             <span class="main-card-head">Indoor Plants</span>
             <p class="main-card-txt">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              porro, ipsa eos consequatur doloremque cum, animi corrupti
-              voluptatem consequuntur.
+              corrupti voluptatem consequuntur.
             </p>
+            <div class="main-svg-box margin-top">
+              <span class="main-price">&#36;20.00</span>
+              <button class="menu-button button">Buy</button>
+            </div>
           </div>
 
           <div class="main-card-4">
             <img
               class="main-card-img"
               src="img/country-quiz.png"
-              alt="celebrity quiz illustration"
+              alt="Country quiz illustration"
             />
             <span class="main-card-head">Countries</span>
             <p class="main-card-txt">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              porro, ipsa eos consequatur doloremque cum, animi corrupti
-              voluptatem consequuntur.
+              corrupti voluptatem consequuntur.
             </p>
+            <div class="main-svg-box margin-top">
+              <span class="main-price">&#36;21.00</span>
+              <button class="menu-button button">Buy</button>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="heading-primary">Challenges</h1>
+
+        <div class="main-cards">
+          <div class="main-card-1">
+            <div class="main-challenge-img">
+              <img
+                class="main-card-img1"
+                src="img/tech.png"
+                alt="Technology quiz illustration"
+              />
+            </div>
+            <span class="main-card-head">Technology</span>
+            <p class="main-card-txt">
+              Lorem ipsum dolor sit ametsetur adipisicing elit consequuntur.
+            </p>
+            <div class="main-challenge-box">
+              <div class="challenge-align">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="challenge-svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span class="challenge-txt">20 min</span>
+              </div>
+              <div class="challenge-align">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="challenge-svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+                  />
+                </svg>
+                <span class="challenge-txt">20 marks</span>
+              </div>
+            </div>
+
+            <button class="menu-button button1">Start Quiz</button>
+          </div>
+
+          <div class="main-card-2">
+            <div class="main-challenge-img">
+              <img
+                class="main-card-img1"
+                src="img/planet.png"
+                alt="Planets quiz illustration"
+              />
+            </div>
+            <span class="main-card-head">Planets</span>
+            <p class="main-card-txt">
+              Lorem ipsum dolor sit ametsetur adipisicing elit consequuntur.
+            </p>
+            <div class="main-challenge-box">
+              <div class="challenge-align">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="challenge-svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span class="challenge-txt">30 min</span>
+              </div>
+              <div class="challenge-align">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="challenge-svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+                  />
+                </svg>
+                <span class="challenge-txt">10 marks</span>
+              </div>
+            </div>
+            <button class="menu-button button1">Start Quiz</button>
+          </div>
+
+          <div class="main-card-3">
+            <div class="main-challenge-img">
+              <img
+                class="main-card-img1"
+                src="img/chem.png"
+                alt="Chemical quiz illustration"
+              />
+            </div>
+            <span class="main-card-head">Chemical Symbols</span>
+            <p class="main-card-txt">
+              Lorem ipsum dolor sit ametsetur adipisicing elit consequuntur.
+            </p>
+            <div class="main-challenge-box">
+              <div class="challenge-align">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="challenge-svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span class="challenge-txt">40 min</span>
+              </div>
+              <div class="challenge-align">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="challenge-svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+                  />
+                </svg>
+                <span class="challenge-txt">30 marks</span>
+              </div>
+            </div>
+            <button class="menu-button button1">Start Quiz</button>
+          </div>
+
+          <div class="main-card-4">
+            <div class="main-challenge-img">
+              <img
+                class="main-card-img1"
+                src="img/world.png"
+                alt="World leader quiz illustration"
+              />
+            </div>
+            <span class="main-card-head">World Leader</span>
+            <p class="main-card-txt">
+              Lorem ipsum dolor sit ametsetur adipisicing elit consequuntur.
+            </p>
+            <div class="main-challenge-box">
+              <div class="challenge-align">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="challenge-svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span class="challenge-txt">50 min</span>
+              </div>
+              <div class="challenge-align">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="challenge-svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+                  />
+                </svg>
+                <span class="challenge-txt">40 marks</span>
+              </div>
+            </div>
+            <button class="menu-button button1">Start Quiz</button>
+          </div>
+        </div>
+
+        <div class="main-cards">
+          <div class="main-card-1">
+            <div class="main-challenge-img">
+              <img
+                class="main-card-img1"
+                src="img/tech.png"
+                alt="Technology quiz illustration"
+              />
+            </div>
+            <span class="main-card-head">Technology</span>
+            <p class="main-card-txt">
+              Lorem ipsum dolor sit ametsetur adipisicing elit consequuntur.
+            </p>
+            <div class="main-challenge-box">
+              <div class="challenge-align">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="challenge-svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span class="challenge-txt">20 min</span>
+              </div>
+              <div class="challenge-align">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="challenge-svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+                  />
+                </svg>
+                <span class="challenge-txt">20 marks</span>
+              </div>
+            </div>
+
+            <button class="menu-button button1">Start Quiz</button>
+          </div>
+
+          <div class="main-card-2">
+            <div class="main-challenge-img">
+              <img
+                class="main-card-img1"
+                src="img/planet.png"
+                alt="Planets quiz illustration"
+              />
+            </div>
+            <span class="main-card-head">Planets</span>
+            <p class="main-card-txt">
+              Lorem ipsum dolor sit ametsetur adipisicing elit consequuntur.
+            </p>
+            <div class="main-challenge-box">
+              <div class="challenge-align">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="challenge-svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span class="challenge-txt">30 min</span>
+              </div>
+              <div class="challenge-align">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="challenge-svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+                  />
+                </svg>
+                <span class="challenge-txt">10 marks</span>
+              </div>
+            </div>
+            <button class="menu-button button1">Start Quiz</button>
+          </div>
+
+          <div class="main-card-3">
+            <div class="main-challenge-img">
+              <img
+                class="main-card-img1"
+                src="img/chem.png"
+                alt="Chemical quiz illustration"
+              />
+            </div>
+            <span class="main-card-head">Chemical Symbols</span>
+            <p class="main-card-txt">
+              Lorem ipsum dolor sit ametsetur adipisicing elit consequuntur.
+            </p>
+            <div class="main-challenge-box">
+              <div class="challenge-align">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="challenge-svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span class="challenge-txt">40 min</span>
+              </div>
+              <div class="challenge-align">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="challenge-svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+                  />
+                </svg>
+                <span class="challenge-txt">30 marks</span>
+              </div>
+            </div>
+            <button class="menu-button button1">Start Quiz</button>
+          </div>
+
+          <div class="main-card-4">
+            <div class="main-challenge-img">
+              <img
+                class="main-card-img1"
+                src="img/world.png"
+                alt="World leader quiz illustration"
+              />
+            </div>
+            <span class="main-card-head">World Leader</span>
+            <p class="main-card-txt">
+              Lorem ipsum dolor sit ametsetur adipisicing elit consequuntur.
+            </p>
+            <div class="main-challenge-box">
+              <div class="challenge-align">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="challenge-svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span class="challenge-txt">50 min</span>
+              </div>
+              <div class="challenge-align">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="challenge-svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+                  />
+                </svg>
+                <span class="challenge-txt">40 marks</span>
+              </div>
+            </div>
+            <button class="menu-button button1">Start Quiz</button>
           </div>
         </div>
       </section>
 
-      <section class="account-section">section2</section>
+      <section class="account-section">
+        <div class="account-svg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="nav-main-svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="nav-main-svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+            />
+          </svg>
+        </div>
+        <div class="account-avatar">
+          <img
+            class="avatar-img"
+            src="img/women-avatar.png"
+            alt="women avatar"
+          />
+          <h1 class="heading-primary">Hi Prachi!</h1>
+        </div>
+        <div class="account-info">
+          <div class="account-info-card1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="info-svg1"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"
+              />
+            </svg>
+            <p class="info-head1">Quizes Completed</p>
+            <div class="info-num-align"><p class="info-num1">120</p></div>
+          </div>
+
+          <div class="account-info-card2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="info-svg2"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z"
+              />
+            </svg>
+            <p class="info-head2">Knowledge Level</p>
+            <div class="info-num-align"><p class="info-num2">60</p></div>
+          </div>
+        </div>
+
+        <h3 class="account-head">Resume Quizes</h3>
+        <div class="resume-quiz-cards">
+          <div class="resume-card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="resume-svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
+              />
+            </svg>
+            <span class="resume-txt">Holidays</span>
+          </div>
+          <div class="resume-card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="resume-svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
+              />
+            </svg>
+            <span class="resume-txt">Covid-19</span>
+          </div>
+
+          <div class="resume-card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="resume-svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
+              />
+            </svg>
+            <span class="resume-txt">Art and Design</span>
+          </div>
+
+          <div class="resume-card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="resume-svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
+              />
+            </svg>
+            <span class="resume-txt">Celebrities</span>
+          </div>
+          <div class="resume-card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="resume-svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
+              />
+            </svg>
+            <span class="resume-txt">Pets</span>
+          </div>
+
+          <div class="resume-card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="resume-svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
+              />
+            </svg>
+            <span class="resume-txt">Health and Care</span>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

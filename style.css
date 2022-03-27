@@ -24,6 +24,7 @@ yellow-
 html {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
+  color: #555;
 }
 body {
   background: linear-gradient(#d0ebff, #e5dbff);
@@ -72,6 +73,8 @@ main {
 .account-section {
   background-color: #fff;
   border-radius: 0 20px 20px 0;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 /* *****************************************
@@ -153,7 +156,7 @@ MENU- MAIN SECTION
 
 .search-bar-input {
   width: 95%;
-  color: #f3d9fa;
+  color: #862e9c;
   font-size: 1rem;
   border: 0;
   outline: 0;
@@ -170,8 +173,11 @@ MENU- MAIN SECTION
   color: #fff;
   padding: 1.5rem 2rem;
   border: 0;
-  background-color: #00bb4b;
+  background-color: #04acca;
   border-radius: 7px;
+}
+.menu-button:hover {
+  transform: scale(1.05);
 }
 
 .menu-button-svg {
@@ -203,6 +209,15 @@ MAIN SECTION
   margin: 2rem 0;
   background-color: #fff;
   padding: 2rem;
+  border-radius: 7px;
+}
+
+.main-card-1:hover,
+.main-card-2:hover,
+.main-card-3:hover,
+.main-card-4:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 2.2rem 4.4rem rgba(0, 0, 0, 0.06);
 }
 
 .main-card-img {
@@ -210,10 +225,266 @@ MAIN SECTION
 }
 
 .main-card-head {
+  display: block;
+  font-size: 1.5rem;
+  color: #9243a6;
+  font-weight: 600;
+  margin-top: 2rem;
 }
 .main-card-txt {
+  font-size: 1.05rem;
+  margin: 1rem 0;
+  letter-spacing: 0.1px;
+  line-height: 15px;
+}
+
+.card-img1 {
+  height: 12rem;
+}
+
+progress {
+  background-color: #862e9c;
+  width: 100%;
+  height: 4px;
+  border-radius: 30px;
+  border: 0;
+}
+
+progress::-webkit-progress-value {
+  background-color: #862e9c !important;
+  width: 100%;
+  border-radius: 30px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #f3d9fa;
+  border-radius: 30px;
+}
+
+progress::-moz-progress-bar {
+  border: 0;
+  height: 4px;
+  border-radius: 30px;
+}
+
+.main-svg-box {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-paid-svg {
+  width: 26px;
+  height: 26px;
+  padding: 6px;
+  stroke: #e599f7;
+}
+
+.main-svg {
+  width: 26px;
+  height: 26px;
+  background-color: #ffec99;
+  padding: 4px 7px;
+  border-radius: 50%;
+  fill: #e67700;
+  opacity: 0.8;
+}
+
+.main-svg:hover {
+  opacity: 1;
+}
+
+.main-price {
+  font-size: 1.2rem;
+  color: #04acca;
+  font-weight: 600;
+}
+.button {
+  background-color: #862e9c;
+  color: #fff;
+}
+
+.margin-top {
+  margin-top: 2rem;
+}
+
+.main-challenge-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.main-challenge-img {
+  display: flex;
+  justify-content: center;
+}
+
+.main-card-img1 {
+  width: 70%;
+  margin: 0.6rem 0;
+}
+
+.challenge-align {
+  display: flex;
+  align-items: center;
+}
+.challenge-svg {
+  width: 15px;
+  height: 15px;
+  margin-right: 0.5rem;
+
+  stroke: #e67700;
+}
+
+.challenge-txt {
+  font-size: 1.2rem;
+  color: #04acca;
+  font-weight: 600;
+}
+
+.button1 {
+  background-color: #862e9c;
+  color: #fff;
+  width: 100%;
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: center;
 }
 
 /* *****************************************
 ACCOUNT
 ***************************************** */
+.account-svg {
+  display: flex;
+  justify-content: right;
+  gap: 1rem;
+  padding: 2rem;
+  padding-bottom: 0;
+}
+
+.account-avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar-img {
+  width: 70%;
+}
+
+.account-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 3rem 2rem 2rem;
+}
+.account-info-card {
+  width: 4rem;
+}
+
+.account-info-card1 {
+  background-color: #ffec99;
+  border-radius: 7px;
+}
+
+.info-svg1 {
+  width: 2rem;
+  color: #e67700;
+  margin: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.info-head1 {
+  color: #e67700;
+  font-size: 1.2rem;
+  margin: 1.2rem;
+  margin-top: 0;
+}
+
+.info-num-align {
+  display: flex;
+  justify-content: center;
+}
+
+.info-num1 {
+  color: #e67700;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 1rem;
+  margin-top: 0;
+}
+
+.account-info-card2 {
+  background-color: #cdeefa;
+  border-radius: 7px;
+}
+
+.info-svg2 {
+  width: 2.1rem;
+  color: #04acca;
+  margin: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.info-head2 {
+  color: #04acca;
+  font-size: 1.2rem;
+  margin: 1.2rem;
+  margin-top: 0;
+}
+
+.info-num2 {
+  color: #04acca;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 1rem;
+  margin-top: 0;
+}
+
+.account-head {
+  font-size: 1.4rem;
+  padding: 2rem;
+  color: #da77f2;
+}
+.resume-quiz-cards {
+}
+
+.resume-card-full {
+}
+
+.resume-card {
+  margin: 0 5rem 2rem 4rem;
+  padding: 1rem;
+
+  border: 1px solid #e599f7;
+  border-right: 0;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.resume-svg {
+  width: 1.5rem;
+  stroke: #da77f2;
+  margin-left: 0.5rem;
+}
+
+.resume-txt {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #862e9c;
+  margin-left: 1.5rem;
+}
+
+.resume-card::after {
+  content: "";
+  position: absolute;
+  top: 1.5px;
+  right: -10px;
+  background-image: url("img/play.svg");
+  background-size: 30px 30px;
+  height: 30px;
+  width: 30px;
+}
