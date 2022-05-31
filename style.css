@@ -4,6 +4,7 @@ colors :blue-
  grape-#e599f7
  #eebefa;
 main grape- #862e9c
+other-#9243a6
 green- #00bb4b
 yellow-
 #e67700
@@ -112,7 +113,7 @@ NAV BAR
 
 .svg-active {
   background-color: #eebefa;
-  fill: #862e9c;
+  stroke: #862e9c;
 }
 
 .logout {
