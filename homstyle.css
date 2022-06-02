@@ -441,7 +441,7 @@ button:focus {
 }
 
 .testimonial::before {
-  content: "\201C";
+  content: '\201C';
   position: absolute;
   top: -5.7rem;
   left: -6.8rem;
@@ -569,6 +569,7 @@ button:focus {
   box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
   z-index: 1000;
   transition: all 0.5s;
+  border-radius: 7px;
 }
 
 .overlay {
@@ -609,13 +610,18 @@ button:focus {
   border-radius: 0.5rem;
 }
 
-.modal__form button {
+.modal__form button,
+.modal__form a {
   grid-column: 1 / span 2;
   justify-self: center;
   margin-top: 1rem;
   background: #9243a6;
   color: #fff;
   letter-spacing: 0.4;
+}
+
+.modal-guest {
+  text-decoration: none;
 }
 
 .btn--close-modal {
