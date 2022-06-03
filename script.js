@@ -77,4 +77,22 @@ tabsContainer.addEventListener('click', function (e) {
 
 //Menu fade animation
 
-const nav = document.querySelector('.nav');
+const nav = document.querySelector('.hom-nav-bar');
+
+const handleHover = function (e) {
+  if (e.target.classsList.contains('nav__link')) {
+    const link = e.target;
+    const siblings = link.closest('.hom-nav-bar').querySelector('nav__link');
+    const logo = link.closest('.hom-nav-bar').querySelector('img');
+
+    siblings.forEach(el => {
+      if (el !== link) el.style.opacity = this;
+    });
+
+    logo.style.opacity = this;
+  }
+};
+
+//passing "argument" into handler functions
+nav.addEventListener('mouseover', handleHover.bind(0.5));
+nav.addEventListener('mouseout', handleHover.bind(1));
