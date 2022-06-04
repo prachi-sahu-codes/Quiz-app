@@ -80,9 +80,11 @@ tabsContainer.addEventListener('click', function (e) {
 const nav = document.querySelector('.hom-nav-bar');
 
 const handleHover = function (e) {
-  if (e.target.classsList.contains('nav__link')) {
+  if (e.target.classList.contains('nav__link')) {
     const link = e.target;
-    const siblings = link.closest('.hom-nav-bar').querySelector('nav__link');
+    const siblings = link
+      .closest('.hom-nav-bar')
+      .querySelectorAll('.nav__link');
     const logo = link.closest('.hom-nav-bar').querySelector('img');
 
     siblings.forEach(el => {
@@ -96,3 +98,5 @@ const handleHover = function (e) {
 //passing "argument" into handler functions
 nav.addEventListener('mouseover', handleHover.bind(0.5));
 nav.addEventListener('mouseout', handleHover.bind(1));
+
+// sticky nav not used here
